@@ -1,14 +1,6 @@
-#!/bin/bash
+-- Step 2: Use the newly created database
+USE `UniversityDB`;
 
-declare -a files
-directory="university_db"
-files=("create_and_use_db.sql" "drop_db.sql") # Array of filenames
-
-for file in "${files[@]}"; do  # Important: Quote "${files[@]}"
-filepath="$directory/$file" # Construct the full path
-if [ -f "$filepath" ]; then
-    echo "$filepath exists"
-else
-    echo "$filepath does not exist"
-fi
-done
+-- Verification (Optional): 
+-- You can add a simple query to verify the database is selected.
+SELECT DATABASE(); -- This will show the currently selected database.
