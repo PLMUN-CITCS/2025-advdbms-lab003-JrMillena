@@ -1,9 +1,2 @@
-#!/bin/bash
-
-directory="university_db"
-
-if [ -d "$directory" ]; then
-echo "Folder exists"
-else
-echo "Folder does not exist"
-fi
+-- Step 1: Create a database called UniversityDB
+CREATE DATABASE `UniversityDB`;
